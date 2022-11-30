@@ -5,7 +5,10 @@ body {
 
   font-style: normal;
 
-  background-color: blue;
+  background-image: url(img/dfjellssongif.gif);
+
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 html {
