@@ -6,14 +6,6 @@ body {
   font-style: normal;
 
   background-color: blue;
-
-  background-image: url(img/dfjellssongif.gif);
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  overflow-x: hidden;
-  background-size: cover;
 }
 
 html {
