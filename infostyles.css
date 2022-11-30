@@ -4,16 +4,14 @@ body {
   font-weight: 200;
 
   font-style: normal;
+
+  background-image: url(img/dfjellssongif.gif);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 html {
-  background-image: url(img/dfjellssongif.gif);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  overflow-x: hidden;
-  height: 100%;
-  background-size: cover;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
