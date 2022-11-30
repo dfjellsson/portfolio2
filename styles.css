@@ -164,6 +164,10 @@ h2 {
     font-size: 2vw;
   }
 
+  .a {
+    padding: 1.5rem;
+  }
+
   h1 {
     font-size: 6vw;
   }
@@ -179,6 +183,7 @@ h2 {
 
   p {
     font-size: 3vw;
+    margin-top: 35vh;
   }
 
   img {
