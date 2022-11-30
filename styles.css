@@ -5,7 +5,7 @@ body {
 
   font-style: normal;
 
-  overflow: auto;
+  overflow: hidden;
 }
 
 html {
@@ -14,7 +14,6 @@ html {
   background-position: center;
   background-attachment: fixed;
   overflow-x: hidden;
-  width: 100%;
   background-size: cover;
   scroll-behavior: smooth;
 }
@@ -228,7 +227,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
   .section1 {
-    height: 24vh;
+    height: 22vh;
   }
 
   .section2 {
