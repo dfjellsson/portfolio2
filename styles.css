@@ -4,6 +4,8 @@ body {
   font-weight: 200;
 
   font-style: normal;
+
+  overflow: auto;
 }
 
 html {
@@ -226,7 +228,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
   .section1 {
-    height: 17vh;
+    height: 24vh;
   }
 
   .section2 {
