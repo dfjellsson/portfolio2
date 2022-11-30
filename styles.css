@@ -90,16 +90,11 @@ nav {
 
 p {
   color: #b9bb47;
-  font-size: 2.5rem;
+  font-size: 3vw;
   font-weight: 400;
+  margin-top: 22vh;
   white-space: nowrap;
   text-decoration: none;
-  margin-block-start: 18rem;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  display: flex;
-  justify-content: center;
 }
 
 h1 {
@@ -185,8 +180,8 @@ h2 {
   }
 
   p {
-    margin-block-start: 45vh;
     font-size: 3vw;
+    position: static;
   }
 
   img {
@@ -224,8 +219,8 @@ h2 {
   }
 
   p {
-    margin-block-start: 18rem;
-    font-size: 1.5rem;
+    font-size: 3.5vw;
+    margin-top: 25vh;
   }
 }
 
@@ -269,8 +264,8 @@ h2 {
   }
 
   p {
-    margin-block-start: 18rem;
     font-size: 3.5vw;
+    margin-top: 30vh;
   }
 }
 
@@ -385,6 +380,7 @@ img {
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
 }
 
 .lightbox iframe {
@@ -419,7 +415,7 @@ img {
   right: 0;
   text-align: center;
   top: 0;
-  top: 25vh;
+  top: 25%;
   transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
