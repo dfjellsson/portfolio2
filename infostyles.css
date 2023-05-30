@@ -17,7 +17,7 @@ body::before {
   position: fixed;
   inset: 0 0 auto 0;
   height: 100dvh;
-  background-image: url(img/dfjellssongif.gif);
+  background-color: black;
   background-size: cover;
   z-index: -1;
 }
@@ -35,6 +35,42 @@ body::before {
   top: 0;
 }
 
+.vl11 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  left: 24vw;
+  top: 0;
+}
+
+.vl111 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  left: 23vw;
+  top: 0;
+}
+
+.vl1111 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  left: 22vw;
+  top: 0;
+}
+
+.vl11111 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  left: 21vw;
+  top: 0;
+}
+
 .vl2 {
   background-color: #b9bb47;
   width: 1px;
@@ -43,6 +79,50 @@ body::before {
   right: 25vw;
   top: 0;
 }
+
+.vl22 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  right: 24vw;
+  top: 0;
+}
+
+.vl222 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  right: 23vw;
+  top: 0;
+}
+
+.vl2222 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  right: 22vw;
+  top: 0;
+}
+
+.vl22222 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  right: 21vw;
+  top: 0;
+}
+
+.showreel {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
 
 .column {
   display: flex;
@@ -58,6 +138,7 @@ body::before {
 .column:hover h1 {
   color: #fcff58;
 }
+
 .column:hover h6 {
   color: #fcff58;
 }
@@ -101,6 +182,19 @@ h1 {
   margin: 1rem;
 }
 
+h3 {
+  color: #b9bb47;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3:hover {
+  color: #fcff58;
+}
+
 h6 {
   color: #b9bb47;
   text-align: center;
@@ -141,6 +235,11 @@ h2 {
   position: relative;
   border-top: 1px solid #b9bb47;
   border-bottom: 1px solid #b9bb47;
+}
+
+.section5 {
+  position: relative;
+  border-top: 1px solid #b9bb47;
 }
 
 .column2 {

@@ -17,7 +17,7 @@ body::before {
   position: fixed;
   inset: 0 0 auto 0;
   height: 100dvh;
-  background-image: url(img/dfjellssongif.gif);
+  background-color: black;
   background-size: cover;
   z-index: -1;
 }
@@ -35,6 +35,42 @@ body::before {
   top: 0;
 }
 
+.vl11 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  left: 9vw;
+  top: 0;
+}
+
+.vl111 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  left: 8vw;
+  top: 0;
+}
+
+.vl1111 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  left: 7vw;
+  top: 0;
+}
+
+.vl11111 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  left: 6vw;
+  top: 0;
+}
+
 .vl2 {
   background-color: #b9bb47;
   width: 1px;
@@ -42,6 +78,48 @@ body::before {
   position: fixed;
   right: 10vw;
   top: 0;
+}
+
+.vl22 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  right: 9vw;
+  top: 0;
+}
+
+.vl222 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  right: 8vw;
+  top: 0;
+}
+
+.vl2222 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  right: 7vw;
+  top: 0;
+}
+
+.vl22222 {
+  background-color: #b9bb47;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  right: 6vw;
+  top: 0;
+}
+
+.showreel {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .column {
@@ -57,6 +135,7 @@ body::before {
 .column:hover h1 {
   color: #fcff58;
 }
+
 .column:hover h6 {
   color: #fcff58;
 }
@@ -127,6 +206,31 @@ h2 {
   width: min-content;
 }
 
+h3 {
+  color: #b9bb47;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3:hover {
+  color: #fcff58;
+}
+
+h4 {
+  color: #b9bb47;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+h5 {
+  color: #b9bb47;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
 .rotated {
   transform: rotate(90deg);
   position: absolute;
@@ -142,19 +246,31 @@ h2 {
 
 .section1 {
   position: relative;
-  min-height: 16vh;
+  min-height: 10rem;
   border-bottom: 1px solid #b9bb47;
+  margin-bottom: 1rem;
 }
 
 .section2 {
   position: relative;
-  min-height: 16rem;
+  min-height: 16em;
   border-top: 1px solid #b9bb47;
 }
 
 .section3 {
   position: relative;
   min-height: 10rem;
+  border-top: 1px solid #b9bb47;
+}
+
+.section4 {
+  position: relative;
+  min-height: 1rem;
+  border-top: 1px solid #b9bb47;
+}
+
+.section5 {
+  position: relative;
   border-top: 1px solid #b9bb47;
 }
 
@@ -194,13 +310,18 @@ h2 {
   }
 
   img {
-    width: 1000px;
-    height: 1000px;
+    width: 1080px;
+    height: 1080px;
   }
 
   iframe {
-    width: 1000px;
-    height: 1000px;
+    width: 1080px;
+    height: 1080px;
+  }
+
+  video {
+    width: 1080px;
+    height: 1080px;
   }
 }
 
@@ -287,6 +408,11 @@ img {
   margin-right: 4px;
 }
 
+video {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
 .container {
   width: auto;
   height: auto;
@@ -352,6 +478,20 @@ img {
   opacity: 100%;
 }
 
+.top ul li video {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  opacity: 75%;
+}
+
+.top ul li video:hover {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  opacity: 100%;
+}
+
 .lightbox {
   opacity: 0;
 
@@ -377,6 +517,19 @@ img {
 }
 
 .lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  position: relative;
+  top: -100%;
+  /* Transition */
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+.lightbox video {
   max-width: 90%;
   max-height: 80%;
   position: relative;
@@ -439,6 +592,16 @@ img {
   -webkit-transform: translateY(-50%);
 }
 
+.lightbox:target video {
+  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
 .lightbox:target iframe {
   top: 0;
   top: 50%;
@@ -447,4 +610,34 @@ img {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
+}
+
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  max-width: 80%;
+  padding: 20px 20px; /* Add left and right padding */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  margin-bottom: 12rem;
+}
+
+.content {
+  flex: 1;
+  margin-left: 25rem;
+}
+
+.image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
 }
